@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Links</title>
+    <!-- Tailwind CSS para estilização simples e moderna -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Pequeno ajuste para transição suave ao passar o mouse */
+        .link-card {
+            transition: all 0.2s ease-in-out;
+        }
+        .link-card:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 font-sans antialiased p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        
+        <header class="mb-10 text-center sm:text-left">
+            <h1 class="text-3xl font-bold text-slate-900 mb-2">Painel de Acessos</h1>
+            <p class="text-slate-500 text-sm">Acesso rápido aos principais sistemas e cadastros.</p>
+        </header>
+
+        <!-- Grade de Links -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+            <!-- CCIR -->
+            <a href="https://sncr.serpro.gov.br/ccir/emissao;jsessionid=-nfkdz0Jz1+E5LwrEHgJLSkP.ccir3?windowId=bb6" target="_blank" rel="noopener noreferrer" 
+               class="link-card block p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <h2 class="text-lg font-bold text-slate-800 uppercase tracking-wide">CCIR</h2>
+                <p class="text-xs text-slate-400 mt-1 truncate">sncr.serpro.gov.br</p>
+            </a>
+
+            <!-- ITR -->
+            <a href="https://servicos.receitafederal.gov.br/servico/certidoes/#/home/cib" target="_blank" rel="noopener noreferrer" 
+               class="link-card block p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <h2 class="text-lg font-bold text-slate-800 uppercase tracking-wide">ITR</h2>
+                <p class="text-xs text-slate-400 mt-1 truncate">servicos.receitafederal.gov.br</p>
+            </a>
+
+            <!-- CND -->
+            <a href="https://servicos.receitafederal.gov.br/servico/certidoes/#/home/cpf" target="_blank" rel="noopener noreferrer" 
+               class="link-card block p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <h2 class="text-lg font-bold text-slate-800 uppercase tracking-wide">CND</h2>
+                <p class="text-xs text-slate-400 mt-1 truncate">servicos.receitafederal.gov.br</p>
+            </a>
+
+            <!-- CAR -->
+            <a href="https://www.car.gov.br/#/consultar" target="_blank" rel="noopener noreferrer" 
+               class="link-card block p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <h2 class="text-lg font-bold text-slate-800 uppercase tracking-wide">CAR</h2>
+                <p class="text-xs text-slate-400 mt-1 truncate">car.gov.br</p>
+            </a>
+
+            <!-- CAF -->
+            <a href="https://caf.mda.gov.br/consulta-publica/ufpa" target="_blank" rel="noopener noreferrer" 
+               class="link-card block p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <h2 class="text-lg font-bold text-slate-800 uppercase tracking-wide">CAF</h2>
+                <p class="text-xs text-slate-400 mt-1 truncate">caf.mda.gov.br</p>
+            </a>
+
+            <!-- Cadastro de Uso de Água -->
+            <a href="http://www.cadastro.aguas.sc.gov.br/ceurh/cadastro.jsp" target="_blank" rel="noopener noreferrer" 
+               class="link-card block p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <h2 class="text-lg font-bold text-slate-800 capitalize tracking-wide">Uso de Água</h2>
+                <p class="text-xs text-slate-400 mt-1 truncate">cadastro.aguas.sc.gov.br</p>
+            </a>
+
+            <!-- Sigen Cidasc -->
+            <a href="https://sigen.cidasc.sc.gov.br/Account/LogOn?ReturnUrl=%2f" target="_blank" rel="noopener noreferrer" 
+               class="link-card block p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <h2 class="text-lg font-bold text-slate-800 capitalize tracking-wide">Sigen Cidasc</h2>
+                <p class="text-xs text-slate-400 mt-1 truncate">sigen.cidasc.sc.gov.br</p>
+            </a>
+
+            <!-- DocuSign -->
+            <a href="https://account.docusign.com/oauth/auth?ui_locales=pt-BR" target="_blank" rel="noopener noreferrer" 
+               class="link-card block p-6 bg-white rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <h2 class="text-lg font-bold text-slate-800 capitalize tracking-wide">DocuSign</h2>
+                <p class="text-xs text-slate-400 mt-1 truncate">account.docusign.com</p>
+            </a>
+
+        </div>
+        
+        <footer class="mt-12 text-center text-xs text-slate-400">
+            <p>Todos os links abrem em uma nova guia.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
